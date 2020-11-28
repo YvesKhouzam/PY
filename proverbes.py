@@ -3,7 +3,7 @@ import json
 import random
 
 # modifé dans PyCharm - succes
-# modifié sur Github
+# modifié sur Github - succes
 
 # Give a Json file and return a List
 def read_values_from_json(path, key):
