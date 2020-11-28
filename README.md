@@ -1,2 +1,2 @@
-# PY
+# Proverbes
 Learning python #newb
