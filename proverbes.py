@@ -12,6 +12,7 @@ def read_values_from_json(path, key):
             values.append(entry[key])
         return values
 
+
 # Give a json and return a list
 def clean_strings(sentences):
     cleaned = []
@@ -23,10 +24,12 @@ def clean_strings(sentences):
         cleaned.append(clean_sentence)
     return cleaned
 
+
 # Return a random item in a list
 def random_item_in(object_list):
     rand_numb = random.randint(0, len(object_list) - 1)
     return object_list[rand_numb]
+
 
 # Return a random value from a json file
 def random_value(source_path, key):
@@ -43,6 +46,7 @@ def random_value(source_path, key):
 
 def random_quote():
     return random_value('quotes.json', 'quote')
+
 
 ######################
 #### CHARACTERS ######
@@ -65,6 +69,7 @@ def print_random_sentence():
     rand_character = random_character()
     print(">>>> {} a dit : {}".format(rand_character, rand_quote))
 
+
 def main_loop():
     while True:
         print_random_sentence()
@@ -74,6 +79,7 @@ def main_loop():
         if choice == 'B':
             break
             # This will stop the loop!
+
 
 if __name__ == '__main__':
     main_loop()
